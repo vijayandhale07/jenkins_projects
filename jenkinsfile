@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Running deployment script..."
+					chmod +x scripts/deploy.sh
                     ./scripts/deploy.sh
                 '''
             }
